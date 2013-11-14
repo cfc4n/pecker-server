@@ -1,11 +1,17 @@
-pecker-server
+介绍
 =============
 
 pecker server是一个存储大量开源php产品源码中，危险函数token记录的服务器。用与[pecker][1] 扫描[结果][2]的服务器校对。
 
+安装
+=============
++ 依赖[yaf][5]拓展开发的程序，务必确保yaf拓展已经安装。
++ 依赖Pecker Scanner 类库来分析检测php代码，以剥离正确token。必无下载pecker scanner的类库，放到lib目录下。
++ 导入db目录下的数据库
++ 更改config目录下的配置文件
++ 使用[pecker scanner][1]扫描出来的结果，更改报告文件源代码中的pecker scanner的域名以及路径，保存之后，点击扫描即可。
 
-
-pecker-server的适用范围
+适用范围
 =============
 
 + 使用者为大型公司的安全运维，负责对公司代码的安全审核，在项目初次上线时，将项目代码使用[pecker][1]扫描一遍，将包含危险函数的token存入pecker server的数据库中，标识为安全。
@@ -22,6 +28,10 @@ DEMO
 使用案例可参考[pecker scanner report][2]内的JS代码。
 
 
+Info
+=====
++ [Home Page][6]
++ [WeiBo][5]
 
 
 
@@ -30,7 +40,9 @@ DEMO
 
 
 
-
-  [1]: https://github.com/cfc4n/pecker-server   "pecker"
+  [1]: https://github.com/cfc4n/pecker  "pecker"
   [2]: http://www.cnxct.com/cfc4n/pecker-scanner-report.html    "pecker scanner report"
   [3]: http://pecker.cnxct.com    "pecker server demo"
+  [4]: http://pecl.php.net/package/yaf "Yaf Framework"
+  [5]: http://weibo.com/n/CFC4N   "CFC4N的微博"
+  [6]: http://www.cnxct.com/pecker-scanner/   "CFC4N的博客"
