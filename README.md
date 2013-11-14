@@ -16,8 +16,10 @@ pecker-server的适用范围
 
 
 
-
-
+DEMO
+=============
+[http://pecker.cnxct.com][3]为demo程序，只提供API接口的调用，结果输出支持jsonp回调，以及支持普通http结果回调。若请求参数中包含jsonp回调标识pecker_jsonp则返回jsonp格式。否则，返回标准json字符串。
+使用案例可参考[pecker scanner report][2]内的JS代码。
 
 
 
@@ -39,3 +41,4 @@ pecker-server的适用范围
 
 [1]:[https://github.com/cfc4n/pecker-server]
 [2]:[http://www.cnxct.com/cfc4n/pecker-scanner-report.html]
+[3]:[http://pecker.cnxct.com]
