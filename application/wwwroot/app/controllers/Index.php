@@ -1,10 +1,10 @@
 <?php
 /**
- * @version $Id: Index.php 2 2013-09-22 07:30:39Z cfc4n $
+ * @version $Id: Index.php 9 2013-11-14 07:22:38Z cfc4n $
  * @author CFC4N 
  *
  */
-class IndexController extends Yaf_Controller_abstract
+class IndexController extends BaseController
 {
 
     public function indexAction ()

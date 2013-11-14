@@ -108,7 +108,14 @@ class View_Adapter extends Yaf_View_Simple
     private $_success = true;
 
     private $_message;
+    
+    private $_bJsonp = false;
 
+    public function setResultType($type = false)
+    {
+        $this->_bJsonp = $type;
+    }
+    
     public function assign ($spec, $value = null)
     {
         if (is_array($spec))
@@ -137,8 +144,14 @@ class View_Adapter extends Yaf_View_Simple
         $return['ret'] = $this->_success;
         $return['msg'] = $this->_message;
         $return['data'] = $this->_tpl_vars;
-//         echo json_encode($return);
-        echo 'pecker_jsonp('.json_encode($return).')';
+        if ($this->_bJsonp)
+        {
+            echo 'pecker_jsonp('.json_encode($return).')';
+        }
+        else
+        {
+        echo json_encode($return);
+        }
     }
     
     public function clear ($name=NULL)

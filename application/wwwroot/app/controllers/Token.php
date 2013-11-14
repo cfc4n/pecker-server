@@ -1,10 +1,10 @@
 <?php
 /**
- * @version $Id: Token.php 3 2013-09-22 08:44:55Z cfc4n $
+ * @version $Id: Token.php 9 2013-11-14 07:22:38Z cfc4n $
  * @author CFC4N 
  *
  */
-class TokenController extends Yaf_Controller_abstract
+class TokenController extends BaseController
 {
 
     private $_mToken;
