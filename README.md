@@ -5,7 +5,7 @@ pecker server是一个存储大量开源php产品源码中，危险函数token�
 
 安装
 =============
-+ 依赖[yaf][5]拓展开发的程序，务必确保yaf拓展已经安装。
++ 依赖[yaf][4]拓展开发的程序，务必确保yaf拓展已经安装。
 + 依赖Pecker Scanner 类库来分析检测php代码，以剥离正确token。必无下载pecker scanner的类库，放到lib目录下。
 + 导入db目录下的数据库
 + 更改config目录下的配置文件
